@@ -1,0 +1,273 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+header {
+  height: 48px;
+  background-color: #f8f9fa;
+  box-shadow: 0 10px 20px #00000026;
+}
+
+header .add-user-logo {
+  height: 48px;
+  width: 17%;
+  position: relative;
+  border-right: 2px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 15px 15px #00000026;
+}
+
+header .add-user-logo img {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.add-user-container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-content {
+  display: flex;
+  flex-grow: 1;
+  align-items: stretch;
+}
+
+.user-content .side-bar {
+  width: 17%;
+  background-color: #f8f9fa;
+  padding-top: 40px;
+  border-right: #c7c9cb 2px solid;
+  border-bottom: #c7c9cb 2px solid;
+}
+
+.user-content .side-bar h2 {
+  color: #212529bf;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 5px;
+  padding-left: 15px;
+  font-weight: 500;
+}
+
+.user-content .side-bar .dashboard-element {
+  text-decoration: none;
+  height: 40px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #0d6efd;
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 14px;
+}
+
+.user-content .side-bar .sign-out {
+  border-top: 1px solid #c7c9cb;
+  margin-top: 10px;
+}
+
+.article {
+  width: 83%;
+  padding: 25px;
+}
+
+.article .article-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 25px;
+  border-bottom: 1.5px solid #dee2e6;
+}
+
+.article .article-title h2 {
+  font-size: 24px;
+}
+
+.article .article-title i {
+  font-size: 24px;
+}
+
+.article .search-user {
+  padding: 30px 25px;
+  width: 100%;
+  text-align: end;
+  display: inline-block;
+  position: relative;
+}
+
+.article .search-user #search-user-input {
+  height: 40px;
+  width: 250px;
+  border: 1px solid #e7eaee;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px 0 #1018280d;
+  font-size: 14px;
+  padding: 13px 35px 13px 10px;
+  color: #64748b;
+  outline: none;
+}
+
+.article .search-user #search-icon {
+  position: absolute;
+  top: 50%;
+  right: 35px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-image: url("/assets/images/search-icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  background-size: 14px;
+  cursor: pointer;
+}
+
+.article .user-data {
+  padding: 0 25px;
+}
+
+.article .user-data table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.article .user-data table thead {
+  background-color: #f9fafb;
+  color: #667085;
+  text-align: left;
+}
+
+.article .user-data table thead th {
+  padding: 13px 20px;
+  font-size: 13px;
+}
+
+.article .user-data table tr {
+  border-bottom: 2px solid #eaecf0;
+}
+
+.article .user-data table tr td {
+  font-size: 14px;
+  padding: 26px 20px;
+  color: #101828;
+  font-weight: 500;
+}
+
+.article .user-data table tr td:nth-child(1) {
+  width: 14%;
+}
+
+.article .user-data table tr td:nth-child(2) {
+  width: 18%;
+}
+
+.article .user-data table tr td:nth-child(3) {
+  width: 20%;
+}
+
+.article .user-data table tr td:nth-child(4),
+.article .user-data table tr td:nth-child(5),
+.article .user-data table tr td:nth-child(6),
+.article .user-data table tr td:nth-child(7) {
+  width: 12%;
+}
+
+.article .user-data table tr td .status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 22px;
+  padding: 0px 8px;
+  border: none;
+  border-radius: 16px;
+}
+
+.article .user-data table tr td .active-status {
+  background-color: #ecfdf3;
+  width: 65px;
+}
+
+.article .user-data table tr td .deactive-status {
+  background-color: #fef2f2;
+  width: 77px;
+}
+
+.article .user-data table tr td .status .dot {
+  height: 6px;
+  width: 6px;
+  border: none;
+  border-radius: 50%;
+}
+
+.article .user-data table tr td .active-status .status-text {
+  color: #027a48;
+  font-size: 12px;
+}
+
+.article .user-data table tr td .active-status .dot {
+  background-color: #12b76a;
+}
+
+.article .user-data table tr td .deactive-status .status-text {
+  color: #b91c1c;
+  font-size: 12px;
+}
+
+.article .user-data table tr td .deactive-status .dot {
+  background-color: #ef4444;
+}
+
+.article .user-data table tr td .button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.article .user-data table tr td .button:nth-child(2) {
+  /* background-color: #0d6efd; */
+  margin-left: 25px;
+}
+
+.article .page-numbers {
+  display: flex;
+  gap: 10px;
+  padding: 30px 25px;
+}
+
+.article .page-numbers a {
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+  line-height: 32px;
+  border: 1px solid #d8dae5;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.article .page-numbers .current-page {
+  color: #fff;
+  background-color: #0066ff;
+}
+
+.article .page-numbers .pagination {
+  display: flex;
+  gap: 10px;
+}

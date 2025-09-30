@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.register-container {
+  width: 100%;
+  max-width: 300px;
+}
+
+.register-container .register-logo {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.register-container .register-logo img {
+  width: 150px;
+}
+
+.register-container .sign-up-message {
+  color: #212529;
+  font-size: 26.8px;
+  line-height: 33.6px;
+  margin-bottom: 20px;
+}
+
+.register-container form input {
+  height: 56px;
+  width: 100%;
+  padding: 20px 13px;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.register-container form p {
+  color: #212529;
+  font-size: 16px;
+  margin-top: 11px;
+  margin-bottom: 16px;
+}
+
+.register-container form a {
+  color: #0d6efd;
+  font-size: 16px;
+}
+
+.register-container form #register-button {
+  color: #fff;
+  background-color: #0d6efd;
+  font-size: 16px;
+  width: 100%;
+  padding: 12px 0;
+  margin-bottom: 50px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.register-container .copy-right {
+  color: #212529;
+  opacity: 75%;
+  font-size: 16px;
+}

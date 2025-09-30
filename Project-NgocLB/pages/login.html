@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="../toast/toast.css" />
+  </head>
+  <body>
+    <div class="toast-box"></div>
+    <div class="login-container">
+      <div class="login-logo">
+        <img src="../assets/images/trello-logo.png" alt="trello-logo" />
+      </div>
+      <p class="sign-up-message">Please sign in</p>
+      <form action="" id="login-form">
+        <input
+          type="email"
+          id="login-email"
+          name="email"
+          placeholder="Email Address"
+          class="form-input"
+        />
+        <br />
+        <div class="toggle-password">
+          <input
+            type="password"
+            id="login-password"
+            name="password"
+            placeholder="Password"
+            class="form-input"
+          />
+        </div>
+        <button><i class="fa-solid fa-eye"></i></button>
+
+        <br />
+
+        <div class="remember-account">
+          <input
+            type="checkbox"
+            id="remember"
+            style="width: 16px; margin-right: 5px"
+          />
+          <label for="remember">Remember me</label>
+        </div>
+        <p>Don't have an account, <a href="./register.html">click here !</a></p>
+        <button id="login-button" type="button">Sign in</button>
+      </form>
+
+      <p class="copy-right">&copy; 2025-Rikkei education</p>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/aba8d940c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="../js/login.js"></script>
+  </body>
+</html>
